@@ -10,6 +10,19 @@ This project demonstrates how to design and control a small electric car using a
 The goal of this project is to create an **RC-style science car** capable of running for 60–120 seconds at ~10 mph using an **ESP32 Dev Board** and **Li-ion (2S/7.4 V)** power system.  
 The project combines elements of **electronics**, **programming**, **mechanical design**, and **battery engineering**, making it ideal for classroom demonstrations or hobby builds.
 
+## 📚 Documentation
+
+For detailed information about each component, see the comprehensive documentation in the `/docs` folder:
+
+- **[🧠 ESP32 Controller](docs/ESP32.md)** - Microcontroller setup and programming
+- **[🌀 Motor System](docs/Motor.md)** - Motor specifications and control
+- **[🔋 Battery Pack](docs/Battery.md)** - Li-ion battery design and safety
+- **[⚡ Relay Module](docs/Relay.md)** - Motor switching and isolation
+- **[🔧 Buck Converter](docs/BuckConverter.md)** - Power regulation
+- **[🧱 Chassis Design](docs/Chassis.md)** - Mechanical structure
+- **[🔌 Wiring Guide](docs/Wiring.md)** - Complete electrical connections
+- **[🎮 Controller Options](docs/Controller.md)** - Wireless control setup
+
 ---
 
 ## 🧠 Features
@@ -59,7 +72,7 @@ Copy code
 
 ---
 
-## 🧾 Wiring Guide
+## 🧾 Quick Start Wiring
 
 | ESP32 Pin | Connection | Description |
 |------------|-------------|--------------|
@@ -67,6 +80,8 @@ Copy code
 | GND | Common ground | Shared ground |
 | GPIO 23 (example) | Relay IN pin | Turns motor on/off |
 | 3V3 | Optional sensor supply | 3.3 V peripherals |
+
+> 💡 **Tip:** For complete wiring details, see **[🔌 Wiring Guide](docs/Wiring.md)**
 
 ---
 
@@ -178,18 +193,32 @@ Open-source electronics and RC community
 
 Instructors and classmates who inspired this science project
 
-📦 Repository Structure
-css
-Copy code
-Science-RC-Car/
-├── code/
+## 📦 Repository Structure
+
+```
+Theiler-car-project/
+├── docs/                    # 📚 Detailed component documentation
+│   ├── ESP32.md            # Microcontroller guide
+│   ├── Motor.md            # Motor system details
+│   ├── Battery.md          # Li-ion battery design
+│   ├── Relay.md            # Relay module setup
+│   ├── BuckConverter.md    # Power regulation
+│   ├── Chassis.md          # Mechanical design
+│   ├── Wiring.md           # Electrical connections
+│   └── Controller.md       # Wireless control options
+├── code/                   # 💻 Arduino/ESP32 source code
 │   ├── esp32_motor_control.ino
 │   └── bluetooth_control.ino
-├── 3d_models/
-│   ├── chassis.FCStd
-│   └── wheel.STL
-├── images/
-├── wiring/
-│   └── schematic.png
-├── LICENSE
-└── README.md
+├── 3d_models/              # 🧱 CAD files and STL models
+│   ├── chassis.FCStd       # FreeCAD chassis design
+│   └── wheel.STL           # 3D printable wheels
+├── images/                 # 📸 Photos and diagrams
+│   ├── wiring_diagram.png
+│   ├── car_assembled.jpg
+│   ├── battery_pack.jpg
+│   └── esp32_relay_setup.png
+├── wiring/                 # ⚡ Electrical schematics
+│   └── schematic.png       # Complete circuit diagram
+├── LICENSE                 # 📄 MIT License
+└── README.md              # 📖 This file
+```
