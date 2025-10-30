@@ -54,7 +54,7 @@ For detailed information about each component, see the comprehensive documentati
 ---
 
 ## ⚙️ Electrical Overview
-
+```
 [Battery 7.4V]
 |
 +-----> [Buck Converter] ---> 5V ---> [ESP32 5V Pin]
@@ -62,9 +62,7 @@ For detailed information about each component, see the comprehensive documentati
 +-----> [Relay Module] ---> [Motor + / –]
 |
 +--> [ESP32 GPIO Control]
-
-markdown
-Copy code
+```
 
 - **Relay isolates** the high-current motor from the ESP32.
 - **Buck converter** ensures stable 5 V logic power.
