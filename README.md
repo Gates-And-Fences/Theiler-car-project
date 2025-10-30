@@ -141,57 +141,65 @@ void loop() {
     digitalWrite(relayPin, LOW);   // Motor OFF
   }
 }
-🧠 Future Improvements
-Add ESC + PWM for variable motor speed.
+```
+## 🧠 Future Improvements
+- Add ESC + PWM for variable motor speed.
 
-Integrate Bluetooth controller input (e.g., Nintendo Switch / PS4).
+- Integrate Bluetooth controller input (e.g., Nintendo Switch / PS4).
 
-Use brushless motor for higher power density.
+- Use brushless motor for higher power density.
 
-Design custom PCB for compact wiring.
+- Design custom PCB for compact wiring.
 
-Implement telemetry (speed, voltage, current).
+- Implement telemetry (speed, voltage, current).
 
-🧰 Tools Used
-Electronics: Soldering iron, multimeter, breadboard, wire kit
+## 🧰 Tools Used
+- Electronics: Soldering iron, multimeter, breadboard, wire kit
 
-3D Design: FreeCAD or Fusion 360
+- 3D Design: FreeCAD or Fusion 360
 
-Programming: Arduino IDE, PlatformIO
+- Programming: Arduino IDE, PlatformIO
 
-Printing: Bambu Studio or Cura for chassis/parts
+- Printing: Bambu Studio or Cura for chassis/parts
 
-Testing: Bench power supply or Li-ion charger
+- Testing: Bench power supply or Li-ion charger
 
-📸 Media (optional)
+## 📸 Media (optional)
 You can add images or diagrams here once ready:
 
-bash
+```bash
 Copy code
 /images/
  ├── wiring_diagram.png
  ├── car_assembled.jpg
  ├── battery_pack.jpg
  └── esp32_relay_setup.png
-Example usage in Markdown:
+```
 
-markdown
-Copy code
 ![Car Build](images/car_assembled.jpg)
-🧾 License
+
+## 🧾 License
 This project is released under the MIT License — you can modify and use it freely, with attribution.
 
-👥 Contributors
-Gates Jones – Project lead, design, electronics, and testing
+## 👥 Contributors
+Gates Jones – Co-Project lead, design, electronics, and testing
+
+CJ Hauser - Co-Project lead, development, presentation
+
+Griffin Lukenbill - Project creative team
+
+Bennet Bedard - Project creative team
 
 ChatGPT (GPT-5) – Documentation and design assistance
 
-⭐ Acknowledgments
-Espressif for the ESP32 platform
+Pollinations.ai/PrisimAI - Docs and Code assistance
 
-Open-source electronics and RC community
+## ⭐ Acknowledgments
+- Espressif for the ESP32 platform
 
-Instructors and classmates who inspired this science project
+- Open-source electronics and RC community
+
+- Instructors and classmates who inspired this science project
 
 ## 📦 Repository Structure
 
