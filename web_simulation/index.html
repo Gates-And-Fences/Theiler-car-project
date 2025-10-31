@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 RC Car Telemetry Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ESP32 RC Car Telemetry Simulation</h1>
+        
+        <div class="car-container">
+            <div class="car">
+                <div class="car-body"></div>
+                <div class="wheel front-left"></div>
+                <div class="wheel front-right"></div>
+                <div class="wheel rear-left"></div>
+                <div class="wheel rear-right"></div>
+                <div class="headlight"></div>
+                <div class="taillight"></div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="voltage-control">Battery Voltage: <span id="voltage-value">7.4</span>V</label>
+                <input type="range" id="voltage-control" min="6.0" max="8.4" step="0.1" value="7.4">
+            </div>
+            
+            <div class="control-group">
+                <label for="current-control">Motor Current: <span id="current-value">0.0</span>A</label>
+                <input type="range" id="current-control" min="0.0" max="5.0" step="0.1" value="0.0">
+            </div>
+            
+            <div class="control-group">
+                <button id="motor-toggle">Start Motor</button>
+            </div>
+        </div>
+        
+        <div class="telemetry-display">
+            <h2>Telemetry Data</h2>
+            <div class="data-row">
+                <span class="label">Battery Voltage:</span>
+                <span id="battery-voltage" class="value">7.40 V</span>
+            </div>
+            <div class="data-row">
+                <span class="label">Motor Current:</span>
+                <span id="motor-current" class="value">0.000 A</span>
+            </div>
+            <div class="data-row">
+                <span class="label">Motor Status:</span>
+                <span id="motor-status" class="value">OFF</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

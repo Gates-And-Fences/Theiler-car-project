@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "author": "Science RC Car Project",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c",
+      "id": "esp",
+      "top": 50,
+      "left": 50,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 100,
+      "left": 300,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 200,
+      "left": 100,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "type": "wokwi-relay-module",
+      "id": "relay1",
+      "top": 300,
+      "left": 200,
+      "attrs": {
+        "relayType": "SRD-05VDC-SL-C"
+      }
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot1",
+      "top": 150,
+      "left": 400,
+      "attrs": {
+        "name": "Voltage"
+      }
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot2",
+      "top": 250,
+      "left": 400,
+      "attrs": {
+        "name": "Current"
+      }
+    }
+  ],
+  "connections": [
+    [ "esp:23", "relay1:IN", "green", [ "v0" ] ],
+    [ "esp:5", "btn1:1.l", "blue", [ "v0" ] ],
+    [ "esp:GND.1", "btn1:2.l", "black", [ "v0" ] ],
+    [ "esp:2", "led1:A", "red", [ "v0" ] ],
+    [ "esp:GND.2", "led1:C", "black", [ "v0" ] ],
+    [ "relay1:VCC", "esp:5V", "red", [ "v0" ] ],
+    [ "relay1:GND", "esp:GND.3", "black", [ "v0" ] ],
+    [ "pot1:VOUT", "esp:34", "orange", [ "v0" ] ],
+    [ "pot1:GND", "esp:GND.4", "black", [ "v0" ] ],
+    [ "pot1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "pot2:VOUT", "esp:35", "yellow", [ "v0" ] ],
+    [ "pot2:GND", "esp:GND.5", "black", [ "v0" ] ],
+    [ "pot2:VCC", "esp:3V3.1", "red", [ "v0" ] ]
+  ]
+}
