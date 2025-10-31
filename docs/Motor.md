@@ -12,6 +12,12 @@ The motor provides propulsion. The system supports both **brushed (simpler)** an
 
 ## Connection
 - +V line through relay's NO terminal
+
+### ESP32 Motor Control Demo
+- **Purpose:** Control motor using ESP32.
+- **Connections:**
+  - +V line through relay's NO terminal
+  - Refer to [ESP32 Motor Control Demo](./ESP32_Motor_Control_Demo.md) for detailed setup.
 - –V directly to battery negative
 - Relay input controlled by ESP32
 

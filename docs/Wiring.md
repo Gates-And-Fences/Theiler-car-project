@@ -22,6 +22,12 @@ Battery GND = Buck Converter GND = ESP32 GND = Relay GND
 
 ```
 ESP32 GPIO 23 → Relay IN → Motor ON/OFF
+
+### ESP32 Motor Control Demo
+- **Purpose:** Control motor using ESP32.
+- **Connections:**
+  - ESP32 GPIO 23 → Relay IN → Motor ON/OFF
+  - Refer to [ESP32 Motor Control Demo](./ESP32_Motor_Control_Demo.md) for detailed wiring.
 ```
 
 ## Tips
