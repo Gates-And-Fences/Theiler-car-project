@@ -98,6 +98,18 @@ For detailed information about each component, see the comprehensive documentati
 
 ---
 
+## 🚀 Getting Started
+
+### Option 1: Try the Simulations First
+Before building the physical car, you can explore the project through simulations:
+
+1. **Web Simulation**: Open `web_simulation/index.html` in your browser for an interactive demo
+2. **Wokwi Simulation**: Visit [wokwi.com](https://wokwi.com) and load the project files from `wokwi_simulation/`
+3. **Demo Code**: Review the Arduino examples in the `demo/` folder
+
+### Option 2: Build the Physical Car
+Follow the assembly steps below to build your own RC car.
+
 ## 🧩 Assembly Steps
 
 1. **Prepare power system**
@@ -120,8 +132,24 @@ For detailed information about each component, see the comprehensive documentati
 
 ---
 
-## 💻 Example Code
+## 💻 Code Examples
 
+This project includes several code examples and simulations:
+
+### Demo Code
+- **[motor_control_demo.ino](demo/motor_control_demo.ino)** - Basic motor control implementation
+- **[telemetry_demo.ino](demo/telemetry_demo.ino)** - Telemetry and data logging example
+
+### Wokwi Simulation
+The project includes a complete **[Wokwi simulation](wokwi_simulation/)** that allows you to test the circuit virtually:
+- Interactive circuit diagram
+- ESP32 code simulation
+- Virtual hardware testing
+
+### Web Simulation
+A **[web-based simulation](web_simulation/)** is also available for browser-based testing and visualization.
+
+### Simple ESP32 Relay Motor Control Example
 ```cpp
 // Simple ESP32 Relay Motor Control
 int relayPin = 23;
@@ -140,27 +168,40 @@ void loop() {
   }
 }
 ```
-## 🧠 Future Improvements
-- Add ESC + PWM for variable motor speed.
+## 🧠 Current Features & Future Improvements
 
-- Integrate Bluetooth controller input (e.g., Nintendo Switch / PS4).
+### ✅ Implemented
+- ✅ **Telemetry system** - See `demo/telemetry_demo.ino` for implementation
+- ✅ **Web-based simulation** - Interactive browser demo available
+- ✅ **Wokwi virtual testing** - Complete circuit simulation environment
+- ✅ **Motor control demo** - Basic on/off control implementation
 
-- Use brushless motor for higher power density.
+### 🚧 Future Improvements
+- Add ESC + PWM for variable motor speed control
+- Integrate Bluetooth controller input (Nintendo Switch / PS4 gamepad)
+- Upgrade to brushless motor for higher power density
+- Design custom PCB for more compact wiring
+- Add real-time data visualization to web interface
+- Implement advanced motion control algorithms
+- Add obstacle avoidance sensors
 
-- Design custom PCB for compact wiring.
+## 🧰 Tools & Platforms Used
 
-- Implement telemetry (speed, voltage, current).
+### Hardware Development
+- **Electronics**: Soldering iron, multimeter, breadboard, wire kit
+- **3D Design**: FreeCAD or Fusion 360 for chassis design
+- **Printing**: Bambu Studio or Cura for 3D printing parts
+- **Testing**: Bench power supply or Li-ion charger
 
-## 🧰 Tools Used
-- Electronics: Soldering iron, multimeter, breadboard, wire kit
+### Software Development
+- **Programming**: Arduino IDE, PlatformIO for ESP32 development
+- **Simulation**: Wokwi for virtual circuit testing
+- **Web Development**: HTML5, CSS3, JavaScript for browser simulation
+- **Version Control**: Git for project management
 
-- 3D Design: FreeCAD or Fusion 360
-
-- Programming: Arduino IDE, PlatformIO
-
-- Printing: Bambu Studio or Cura for chassis/parts
-
-- Testing: Bench power supply or Li-ion charger
+### Simulation Platforms
+- **[Wokwi](https://wokwi.com)** - Virtual electronics prototyping
+- **Web Browser** - For interactive demonstrations and testing
 
 ## 📸 Media (optional)
 You can add images or diagrams here once ready:
@@ -212,19 +253,20 @@ Theiler-car-project/
 │   ├── Chassis.md          # Mechanical design
 │   ├── Wiring.md           # Electrical connections
 │   └── Controller.md       # Wireless control options
-├── code/                   # 💻 Arduino/ESP32 source code
-│   ├── esp32_motor_control.ino
-│   └── bluetooth_control.ino
-├── 3d_models/              # 🧱 CAD files and STL models
-│   ├── chassis.FCStd       # FreeCAD chassis design
-│   └── wheel.STL           # 3D printable wheels
-├── images/                 # 📸 Photos and diagrams
-│   ├── wiring_diagram.png
-│   ├── car_assembled.jpg
-│   ├── battery_pack.jpg
-│   └── esp32_relay_setup.png
-├── wiring/                 # ⚡ Electrical schematics
-│   └── schematic.png       # Complete circuit diagram
+├── demo/                   # 💻 Arduino/ESP32 demo code
+│   ├── motor_control_demo.ino    # Basic motor control example
+│   └── telemetry_demo.ino       # Telemetry and monitoring example
+├── 3d_files/               # 🧱 CAD files and 3D printable models
+│   └── [3D design files]   # Chassis and component models
+├── web_simulation/         # 🌐 Browser-based simulation
+│   ├── index.html          # Main simulation interface
+│   ├── script.js           # Simulation logic
+│   └── style.css           # Styling for web interface
+├── wokwi_simulation/       # 🔧 Wokwi virtual circuit simulation
+│   ├── diagram.json        # Circuit diagram configuration
+│   ├── sketch.ino          # ESP32 simulation code
+│   ├── wokwi-project.txt   # Project metadata
+│   └── wokwi.toml          # Wokwi configuration
 ├── LICENSE                 # 📄 MIT License
 └── README.md              # 📖 This file
 ```
